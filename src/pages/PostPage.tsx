@@ -20,7 +20,7 @@ const CustomButton = styled(Button)`
   justify-content: center;
 `;
 
-const PostPage: React.FC = () => {
+const PostPage: React.FC = (props: any) => {
   const [detail, setDetail] = useState<string>('');
   const [addMount, { data }] = useMutation(ADD_MOUNT);
   const handleInputChange = (e: any) => {
@@ -41,6 +41,7 @@ const PostPage: React.FC = () => {
     if (data) {
       console.log(data);
       alert('どんどんマウントしていこうぜ！！');
+      props.history.push('/');
     }
   }, [data]);
 
