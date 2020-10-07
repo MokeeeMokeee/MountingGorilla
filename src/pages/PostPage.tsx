@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { ADD_MOUNT } from '../query/query';
 
 const Container = styled.div`
-  padding: 10vh 1rem;
+  padding: 15vh 1rem;
 `;
 
 const Content = styled.div`
