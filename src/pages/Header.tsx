@@ -22,6 +22,8 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import Button from '@material-ui/core/Button';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import MainGorilla from '../assets/images/MainGorilla.jpg';
 
 const LinkContent = styled.div`
   display: flex;

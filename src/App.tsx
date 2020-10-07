@@ -8,8 +8,6 @@ import {
   InMemoryCache,
   HttpLink,
 } from '@apollo/client';
-import { Helmet } from 'react-helmet';
-import MainGorilla from './assets/images/MainGorilla.jpg';
 
 /**
  * pages
@@ -45,22 +43,6 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <ApolloProvider client={client}>
-      <Helmet
-        title={`マウンティングゴリラ`}
-        meta={[
-          { name: 'twitter:card', content: 'summary_large_image' },
-          { name: 'twitter:site', content: '' },
-          { name: 'twitter:creator', content: '' },
-          { property: 'og:title', content: 'マウンティングゴリラ' },
-          { property: 'og:type', content: 'website' },
-          { property: 'og:url', content: 'https://' },
-          { property: 'og:image', content: MainGorilla },
-          {
-            property: 'og:description',
-            content: 'マウントを取り合うゴリラの憩いの場',
-          },
-        ]}
-      />
       <ThemeProvider theme={BaseTheme}>
         <GlobalStyle />
         <Router>
